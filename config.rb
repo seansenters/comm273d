@@ -1,3 +1,86 @@
+
+set :markdown_engine, :kramdown
+activate :directory_indexes
+set :trailing_slash, true
+activate :i18n, :mount_at_root => :en
+
+# Slim configuration
+set :slim, {
+  :format  => :html5,
+  :indent => '    ',
+  :pretty => true,
+  :sort_attrs => false
+}
+::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
+
+# Use LiveReload
+activate :livereload
+
+# Compass configuration
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :files_dir, 'assets/files'
+
+# Build-specific configuration
+configure :build do
+  ignore 'images/*.psd'
+  ignore 'stylesheets/lib/*'
+  ignore 'stylesheets/vendor/*'
+  ignore 'javascripts/lib/*'
+  ignore 'javascripts/vendor/*'
+
+  # For example, change the Compass output style for deployment
+  activate :minify_css
+
+  # Minify Javascript on build
+  activate :minify_javascript
+
+  # Enable cache buster
+  # activate :cache_buster
+
+  # Use relative URLs
+  # activate :relative_assets
+
+  # Compress PNGs after build
+  # First: gem install middleman-smusher
+  # require "middleman-smusher"
+  # activate :smusher
+
+  # Or use a different image path
+  # set :http_path, "/Content/images/"
+end
+
+
+activate :blog do |blog|
+  blog.name = "classes"
+  blog.sources = "classes/{course}/{term}/{year}-{month}-{day}.html"
+  blog.permalink = "classes/{term}/{year}-{month}-{day}"
+  blog.layout = "class_day"
+  # blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+  # blog.custom_collections = {
+  #   term: {
+  #     link: '/classes/{term}.html',
+  #     # template: 'layouts/term.html'
+  #   }
+  # }
+end
+
+activate :blog do |blog|
+  blog.name = "updates"
+  blog.prefix = "updates"
+  blog.sources = "updates/{year}/{month}-{day}.html"
+  blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+end
+
+ready do
+  # Add bower's directory to sprockets asset path
+  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
+  sprockets.append_path File.join "#{root}", @bower_config["directory"]
+end
+
+
+
 ###
 # Compass
 ###
@@ -46,66 +129,3 @@
 #     "Helping"
 #   end
 # end
-
-set :markdown_engine, :kramdown
-activate :directory_indexes
-set :trailing_slash, true
-activate :i18n, :mount_at_root => :en
-
-# Slim configuration
-set :slim, {
-  :format  => :html5,
-  :indent => '    ',
-  :pretty => true,
-  :sort_attrs => false
-}
-::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
-
-
-
-# Use LiveReload
-activate :livereload
-
-# Compass configuration
-set :css_dir, 'assets/stylesheets'
-
-set :js_dir, 'assets/javascripts'
-
-set :images_dir, 'assets/images'
-
-set :files_dir, 'assets/files'
-
-# Build-specific configuration
-configure :build do
-  ignore 'images/*.psd'
-  ignore 'stylesheets/lib/*'
-  ignore 'stylesheets/vendor/*'
-  ignore 'javascripts/lib/*'
-  ignore 'javascripts/vendor/*'
-
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
-  # activate :cache_buster
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
-end
-
-ready do
-  # Add bower's directory to sprockets asset path
-  @bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
-  sprockets.append_path File.join "#{root}", @bower_config["directory"]
-end

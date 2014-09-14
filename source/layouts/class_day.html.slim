@@ -1,0 +1,10 @@
+= wrap_layout :layout
+  article.class-day
+    div.container
+      div class="content"
+        h2 Class
+        h1 class="title" = current_page.data.title
+        h3 class="date" = friendly_date current_article.date.strftime '%Y'
+        div.description
+          h5 Description
+          p = current_page.data.description
