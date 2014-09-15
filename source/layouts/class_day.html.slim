@@ -2,9 +2,22 @@
   article.class-day
     div.container
       div class="content"
-        h2 Class
-        h1 class="title" = current_page.data.title
+        h2 Classtime
+        h1 class="title" = current_article.title
         h3 class="date" = friendly_date current_article.date.strftime '%Y'
         div.description
           h5 Description
           p = current_page.data.description
+
+
+      div.stuff
+        div.blogs
+        div
+          - blog('classes').articles.each do |article|
+            div
+              a href="#{{article.url}}"
+                span => article.title
+                span => "Course: #{course_name article} Term: #{term_name article}"
+                span => article.date
+              div => article.data
+

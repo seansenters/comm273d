@@ -1,6 +1,5 @@
 
 set :markdown_engine, :kramdown
-activate :directory_indexes
 set :trailing_slash, true
 activate :i18n, :mount_at_root => :en
 
@@ -54,8 +53,8 @@ end
 
 activate :blog do |blog|
   blog.name = "classes"
-  blog.sources = "classes/{course}/{term}/{year}-{month}-{day}.html"
-  blog.permalink = "classes/{term}/{year}-{month}-{day}"
+  blog.sources = "/classes/{course}/{term}/{year}-{month}-{day}.html"
+  blog.permalink = "/classes/{course}/{term}/{year}-{month}-{day}"
   blog.layout = "class_day"
   # blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
   # blog.custom_collections = {
@@ -67,11 +66,23 @@ activate :blog do |blog|
 end
 
 activate :blog do |blog|
-  blog.name = "updates"
-  blog.prefix = "updates"
-  blog.sources = "updates/{year}/{month}-{day}.html"
+  blog.name = "lessons"
+  blog.sources = "/lessons/{topic}/{title}.html"
+  blog.permalink = "/lessons/{topic}/{title}"
   blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+  blog.layout = "lesson"
 end
+
+
+# activate :blog do |blog|
+#   blog.name = "updates"
+#   blog.prefix = "updates"
+#   blog.sources = "updates/{year}/{month}-{day}.html"
+#   blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+# end
+
+activate :directory_indexes
+
 
 ready do
   # Add bower's directory to sprockets asset path

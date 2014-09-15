@@ -2,3 +2,16 @@
 @import "customs";
 @import "imports";
 
+
+article.lesson{
+  section.content{
+
+    img{
+      width: 100%;
+    }
+
+    hr{
+      margin-bottom: 3.0em;
+    }
+  }
+}

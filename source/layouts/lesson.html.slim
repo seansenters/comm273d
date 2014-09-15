@@ -1,10 +1,14 @@
 = wrap_layout :layout
   article.lesson
     div.container
-      div class="content"
+      section.meta
         h2 Lesson
-        h1 class="title" = current_page.data.title
+        h1 class="title" = current_article.title
 
         div.description
           h5 Description
           p = current_page.data.description
+
+
+        section.content
+          = yield
