@@ -140,3 +140,21 @@ end
 #     "Helping"
 #   end
 # end
+
+
+# # More Build-specific configuration
+# configure :build do
+#   # Enable cache buster
+#   # activate :cache_buster
+
+#   # Use relative URLs
+#   # activate :relative_assets
+
+#   # Compress PNGs after build
+#   # First: gem install middleman-smusher
+#   # require "middleman-smusher"
+#   # activate :smusher
+
+#   # Or use a different image path
+#   # set :http_path, "/Content/images/"
+# end

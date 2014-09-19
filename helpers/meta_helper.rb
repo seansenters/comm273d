@@ -1,11 +1,18 @@
 def friendly_date(val)
-  case val
+  _to_date(val).strftime '%B %d, %Y'
+end
+
+def machine_date(val)
+  _to_date(val).strftime '%Y-%m-%dT%l:%M:%S%z'
+end
+
+def _to_date(val)
+  d = case val
   when Date, Time
-    val.strftime '%B %d, %Y'
-  when /^\d+/
-    date = Chronic.parse(val)
-    return date.strftime '%B %d, %Y'
+    val
   else
-    return val
+    Chronic.parse(val)
   end
+
+  return d
 end

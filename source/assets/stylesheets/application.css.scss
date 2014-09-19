@@ -5,7 +5,6 @@
 
 article.lesson{
   section.content{
-
     img{
       width: 100%;
     }
@@ -14,4 +13,14 @@ article.lesson{
       margin-bottom: 3.0em;
     }
   }
+}
+
+
+article.class-day{
+  .foot-matter{
+    border-top: thin solid #777;
+    margin-top: 4.0em;
+    padding-top: 3.0em;
+  }
+
 }
