@@ -13,7 +13,7 @@ set :slim, {
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
 
 # Use LiveReload
-activate :livereload
+# activate :livereload
 
 # Compass configuration
 set :css_dir, 'assets/stylesheets'
@@ -51,12 +51,16 @@ configure :build do
 end
 
 
-activate :blog do |blog|
-  blog.name = "classes"
-  blog.sources = "/classes/{course}/{term}/{year}-{month}-{day}.html"
-  blog.permalink = "/classes/{course}/{term}/{year}-{month}-{day}"
-  blog.layout = "class_day"
-  # blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+activate :blog do |class_blog|
+  class_blog.name = "lectures"
+  class_blog.sources = "/lectures/{course}/{term}/{year}-{month}-{day}.html"
+  # class_blog.permalink = "/lectures/{course}/{term}/{year}-{month}-{day}"
+  # this will probably bite me in the ass if I decide to store
+  # multiple terms/classes in this thing, but it sure is convenient right now:
+  class_blog.permalink = "/{year}-{month}-{day}"
+  class_blog.layout = "lecture"
+  class_blog.publish_future_dated = true
+  class_blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
   # blog.custom_collections = {
   #   term: {
   #     link: '/classes/{term}.html',
@@ -65,21 +69,29 @@ activate :blog do |blog|
   # }
 end
 
-activate :blog do |blog|
-  blog.name = "lessons"
-  blog.sources = "/lessons/{topic}/{title}.html"
-  blog.permalink = "/lessons/{topic}/{title}"
-  blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
-  blog.layout = "lesson"
+activate :blog do |lesson_blog|
+  lesson_blog.name = "lessons"
+  lesson_blog.sources = "/lessons/{topic}/{title}.html"
+  lesson_blog.permalink = "/lessons/{topic}/{title}"
+  lesson_blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+  lesson_blog.layout = "lesson"
+  lesson_blog.publish_future_dated = true
 end
 
 
-# activate :blog do |blog|
-#   blog.name = "updates"
-#   blog.prefix = "updates"
-#   blog.sources = "updates/{year}/{month}-{day}.html"
-#   blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
-# end
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'www.padjo.org' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                     = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.delete                     = false # We delete stray files by default.
+  s3_sync.after_build                = true # We do not chain after the build step by default.
+  s3_sync.prefer_gzip                = false
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+  s3_sync.prefix                     = ''
+end
+
 
 activate :directory_indexes
 
@@ -91,6 +103,10 @@ ready do
 end
 
 
+## -------------------------------------------------------------------
+## -------------------------------------------------------------------
+## -------------------------------------------------------------------
+## -------------------------------------------------------------------
 
 ###
 # Compass
@@ -158,3 +174,8 @@ end
 #   # Or use a different image path
 #   # set :http_path, "/Content/images/"
 # end
+
+
+
+### S3 stuff
+

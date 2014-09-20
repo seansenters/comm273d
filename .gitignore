@@ -18,3 +18,5 @@ Gemfile.lock
 /bower_components
 
 /_drafts
+
+.s3_sync
