@@ -1,9 +1,11 @@
 - cdata = current_page.data
 - lecture_meta = cdata.other_meta || {}
+- course = current_article.metadata[:page]['course']
+- term = current_article.metadata[:page]['term']
 = wrap_layout :layout
   article.lecture
     div.container
-      section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_meta, page_data: cdata}
+      section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_meta, page_data: cdata, course: course, term: term}
 
     section.content
       div.container
@@ -13,14 +15,5 @@
     section.foot-matter
       div.container
         div.class-listing
-          h5 Class schedule
-          div => "Course: #{course_name current_article} Term: #{term_name current_article}"
-          ul.list.list-unstyled
-            - blog('lectures').articles.sort_by{|a| a.date }.each do |article|
-              li
-                span.date => friendly_class_date article.date
-                ' -
-                span.title
-                  a href="#{{article.url}}"
-                    span => article.title
-
+          h5 Course schedule
+          div => partial 'layouts/partials/course_schedule', locals: { lectures: blog('lectures').articles, course: course, term: term}

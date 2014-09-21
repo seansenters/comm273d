@@ -1,6 +1,6 @@
 section.top-meta
-  h5 => "Class: #{course_name current_article} | #{term_name current_article}"
-  h5 class="date" data-date="#{{machine_date page_data.date}}" = friendly_class_date page_data.date
+  h5 => "Class: #{course_name course} | #{term_name term}"
+  h5 class="date" data-date="#{{machine_date page_data.date}}" = friendly_schedule_date page_data.date
   h1 class="title" = page_data.title
   div.deck
     p = page_data.deck

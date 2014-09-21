@@ -1,0 +1,11 @@
+/ the :course is actually current_article, via the blog plugin
+div => "Course: #{course_name course} Term: #{term_name term}"
+ul.list.list-unstyled
+  - lectures.sort_by{|a| a.date }.each do |lecture|
+    li
+      span.date => friendly_schedule_date lecture.date
+      ' -
+      span.title
+        a href="#{{lecture.url}}"
+          span => lecture.title
+
