@@ -1,5 +1,6 @@
 ---
 title: Syllabus COMM 273D - Fall 2014
+layout: page
 description: Stanford-specific information for the Fall 2014 session of Public Affairs Data Journalism COMM 273D, taught by Dan Nguyen
 ---
 

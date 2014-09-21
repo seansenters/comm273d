@@ -1,7 +1,10 @@
 = wrap_layout :layout
   article.page
-    div.container
-      div class="content"
+    section.meta
+      div.container
         h1 class="title" = current_page.data.title
-        p Page
+    section.content
+      div.container
         = yield
+
+

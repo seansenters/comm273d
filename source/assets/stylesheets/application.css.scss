@@ -1,26 +1,8 @@
 @charset "utf-8";
 @import "customs";
 @import "imports";
+@import "woz";
+@import "articles";
 
 
-article.lesson{
-  section.content{
-    img{
-      width: 100%;
-    }
 
-    hr{
-      margin-bottom: 3.0em;
-    }
-  }
-}
-
-
-article.lecture{
-  .foot-matter{
-    border-top: thin solid #777;
-    margin-top: 4.0em;
-    padding-top: 3.0em;
-  }
-
-}

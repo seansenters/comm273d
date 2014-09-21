@@ -1,18 +1,11 @@
-def friendly_date(val)
-  _to_date(val).strftime '%B %d, %Y'
-end
-
-def machine_date(val)
-  _to_date(val).strftime '%Y-%m-%dT%l:%M:%S%z'
-end
-
-def _to_date(val)
-  d = case val
-  when Date, Time
-    val
+def page_title
+  if (t = data.page.title)
+    t + " | " + config[:site_title]
   else
-    Chronic.parse(val)
+    config[:site_title]
   end
+end
 
-  return d
+def page_description
+  data.page.description || config[:site_description]
 end

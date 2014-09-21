@@ -1,8 +1,10 @@
-
 set :markdown_engine, :kramdown
 set :trailing_slash, true
-activate :i18n, :mount_at_root => :en
+set :site_title, 'Public Affairs Data Journalism'
+set :site_description, "Civic accountability journalism taught at the Stanford University Graduate Journalism Program"
 
+activate :i18n, :mount_at_root => :en
+activate :livereload
 # Slim configuration
 set :slim, {
   :format  => :html5,
@@ -11,9 +13,6 @@ set :slim, {
   :sort_attrs => false
 }
 ::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
-
-# Use LiveReload
-# activate :livereload
 
 # Compass configuration
 set :css_dir, 'assets/stylesheets'
@@ -69,13 +68,13 @@ activate :blog do |class_blog|
   # }
 end
 
-activate :blog do |lesson_blog|
-  lesson_blog.name = "lessons"
-  lesson_blog.sources = "/lessons/{topic}/{title}.html"
-  lesson_blog.permalink = "/lessons/{topic}/{title}"
-  lesson_blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
-  lesson_blog.layout = "lesson"
-  lesson_blog.publish_future_dated = true
+activate :blog do |tutorial_blog|
+  tutorial_blog.name = "tutorials"
+  tutorial_blog.sources = "/tutorials/{topic}/{title}.html"
+  tutorial_blog.permalink = "/tutorials/{topic}/{title}"
+  tutorial_blog.summary_separator = /SPLIT_SUMMARY_BEFORE_THIS/
+  tutorial_blog.layout = "tutorial"
+  tutorial_blog.publish_future_dated = true
 end
 
 

@@ -1,42 +1,11 @@
 - cdata = current_page.data
-- other_meta = cdata.other_meta || {}
+- lecture_meta = cdata.other_meta || {}
 = wrap_layout :layout
   article.lecture
     div.container
-      section.meta
-        section.top-meta
-          h5 => "Class: #{course_name current_article} | #{term_name current_article}"
-          h5 class="date" data-date="#{{machine_date cdata.date}}" = friendly_class_date cdata.date
-          h1 class="title" = cdata.title
-          div.deck
-            p = cdata.deck
-          div.description
-            p = cdata.description
-        section.other-meta
-          div.highlights
-            h4 Highlights
-            ul
-              - other_meta[:highlights].andand.each do |hilite|
-                li => hilite
-
-          div.homework
-            h4 Homework
-            - other_meta[:homework].andand.each do |homework|
-              ul
-                li => homework[:title]
-
-          div.supplements
-            h4 Supplements
-            - other_meta[:supplements].andand.each do |supplement|
-              ul
-                li
-                  a.title href="#{{supplement[:url]}}"
-                    span => supplement[:title]
-                  span.source => supplement[:source]
-
+      section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_meta, page_data: cdata}
 
     section.content
-      hr
       div.container
         = yield
 

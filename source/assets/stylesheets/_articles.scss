@@ -1,0 +1,26 @@
+article.lesson{
+  section.content{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+article.lecture{
+  .foot-matter{
+    border-top: thin solid #777;
+    margin-top: 4.0em;
+    padding-top: 3.0em;
+  }
+}
+
+article{
+    hr{
+      margin-bottom: 3.0em;
+      margin-top: 2.0em;
+      padding-bottom: 3.0em;
+      padding-top: 3.0em;
+      page-break-before: always;
+    }
+}
