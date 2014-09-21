@@ -1,66 +1,14 @@
-# Middleman Template with Slim, Sass & Coffeescript
+# Public Affairs Data Journalism, The Repo
+
+This is the Github repository for the class site of __Public Affairs Data Journalism I__, as taught at [Stanford University's Graduate Journalism Program.](http://journalism.stanford.edu/)
+
+The site currently lives at: [padjo.org](//www.padjo.org) and is currently maintained by lecturer [Dan Nguyen](//www.stanford.edu/~dun).
 
 
+## Technical details
 
-
-## Article structure
-
-Articles are put inside the __/source/articles__ folder. 
-
-
-The folder name serves as the slug of the article.
-
-  e.g.  /source/articles/hello-world
-
-Would generate an article on the site:
-
-  /articles/hello-world
-
-
-### Article folder structure
-
-As per standard Middleman operation, index.md and index.html will be turned into webpages.
-
-However, if index.yml is used, then yml is treated as the article-layout specification.
-
-
-### index.yml specification
-
-```yaml
-front_matter:
-  title: 
-  date:
-  description:
-  deck:
-  keywords:
-```
-
-
-Content stuff:
-```yaml
-
-content_matter:
-# An array of content_pieces, which includes:
-# headline: (optional) if included, we put it in the table of contents
-# sections: Another array of sections
-# markdown: Markdown-content
-# image: banner or floaty images
-# e.g.
-- headline: First section, e.g. 1
-  markdown: This is some text. [hello there](//hello.html)
-  footnotes: 
-    - slug: somethingslug
-      text: A description of the link. Will also be included in lesson index.
-      url: Linkage
-  sections:
-    # a sub array of content
-    - headline: This will be 1.1 
-      markdown: More text         
-```
-
-
-
-
-
-
-
+This site was built with [Middleman](http://middlemanapp.com/), the Ruby static-site generator. Other libraries and packages used include:
+  
+- [Bootstrap](//getbootstrap.com) (via [bootstrap-sass](https://github.com/twbs/bootstrap-sass))
+- [Slim](http://slim-lang.com/), for HTML templating
+- [Kramdown](http://kramdown.gettalong.org/), a superset of Markdown
