@@ -16,11 +16,19 @@ article.lecture{
 }
 
 article{
-    hr{
-      margin-bottom: 3.0em;
-      margin-top: 2.0em;
-      padding-bottom: 3.0em;
-      padding-top: 3.0em;
-      page-break-before: always;
-    }
+  // hr{
+  //   margin-bottom: 3.0em;
+  //   margin-top: 2.0em;
+  //   padding-bottom: 3.0em;
+  //   padding-top: 3.0em;
+  //   page-break-before: always;
+  // }
+  hr{
+    margin-bottom: 2.0em;
+    margin-top: 2.0em;
+    padding-bottom: 2.0em;
+    page-break-before: always;
+  }
+
+
 }

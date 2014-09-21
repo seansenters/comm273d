@@ -1,0 +1,17 @@
+- cdata = current_page.data
+= wrap_layout :layout
+  article.home
+    section.meta
+      div.container
+        h1 class="title" = cdata.title
+    section.content
+      div.container
+        = yield
+
+
+      - if current_course = cdata.current_course
+        section.current_course
+          div.container
+            h2#current-course-schedule Course schedule
+            div => partial 'layouts/partials/course_schedule', locals: { lectures: blog('lectures').articles, course: current_course[:name], term: current_course[:term]}
+

@@ -26,10 +26,23 @@ html lang='en' class='no-js'
     / Stylesheets
     = stylesheet_link_tag 'application'
 
-    - if build?
+
+    / fonts
+
+    // google font
+    link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'
+    / Typekit
+    - if (tkit_id = config[:typekit_id])
+        script type="text/javascript" src="//use.typekit.net/#{{tkit_id}}.js"
+        javascript:
+            try{Typekit.load();}catch(e){}
+
+
+
+    - if build? && (ga_id = config[:google_analytics_id])
       / Google Analytics
       javascript:
-        | var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        | var _gaq=[['_setAccount','#{{ga_id}}'],['_trackPageview']];
         | (function[d,t]{var g=d.createElement[t],s=d.getElementsByTagName[t][0];
         | g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         | s.parentNode.insertBefore[g,s]}(document,'script'));

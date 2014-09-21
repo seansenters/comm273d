@@ -2,6 +2,8 @@ set :markdown_engine, :kramdown
 set :trailing_slash, true
 set :site_title, 'Public Affairs Data Journalism'
 set :site_description, "Civic accountability journalism taught at the Stanford University Graduate Journalism Program"
+set :typekit_id, 'deu1taf'
+set :google_analytics_id, 'UA-55019978-1'
 
 activate :i18n, :mount_at_root => :en
 activate :livereload
