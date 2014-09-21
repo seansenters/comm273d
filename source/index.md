@@ -33,3 +33,20 @@ Sample problems I would like students to solve:
 
 - Given a list of 100 Twitter accounts and 100 of their recent tweets, devise a system to relaibly filter spam accounts using only a spreadsheet.
 - With only a 
+
+
+### Related classes
+
+COMM 273D is the pre-requisite for [COMM 274D: Public Affairs Data Journalism II](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=COMM+274D&collapse=), which is taught in the winter by [Cheryl Phillips](http://journalism.stanford.edu/news-cheryl-phillips/).
+
+I am also teaching the following two classes (open to undergraduates outside of the journalism program):
+
+- [COMM 113/213: Computational Methods in the Civic Sphere](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=COMM+213+Civic+Sphere&collapse=) in the winter quarter
+- [COMM 177A/277A: Computational Journalism](https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=COMM+277A&collapse=) in the spring quarter.
+
+How I see the relationship between the 3 courses I'm teaching: 
+
+- __Public Affairs Data Journalism I__ covers the work and process of journalism, as well as the tools and concepts needed to efficiently understand data &ndash; data, that for the most part, I will have extracted and cleaned for class use. 
+- __Computational Methods__ covers the problem-solving skills needed to collect and explore data for public accountability stories, as well as additional techniques for visualizing and publishing data journalism.
+-  __Computational Journalism__ focuses on using computational methods and problem-solving to produce a civically-important project, whether a web news application or through other mediums.
+
