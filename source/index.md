@@ -8,7 +8,7 @@ current_course:
 
 This is the class homepage for [Stanford COMM 273D](/lectures/comm_273d/2014_fall), Public Affairs Data Journalism I, as taught in Fall 2014 by [Lecturer Dan Nguyen](http://stanford.edu/~dun). The lessons and tutorials here are available for public use.
 
-__Quick links:__ The syllabus for [COMM 273D Fall 2014](/lectures/comm_273d/2014_fall). Upcoming class: [Tuesday, Sept. 22](/2014-09-22). The tentative [scheduled classes](#lectures). The [tutorials](#tutorials). Github repo [for this site](https://github.com/public-affairs-data-journalism/comm273d_fall_2014).
+__Quick links:__ The syllabus for [COMM 273D Fall 2014](/lectures/comm_273d/2014_fall). Upcoming class: [Tuesday, Sept. 22](/2014-09-22). The tentative [scheduled classes](#lectures). The [tutorials](#tutorials). Github repo [for this site](https://github.com/public-affairs-data-journalism/comm273d).
 
 
 --------------
