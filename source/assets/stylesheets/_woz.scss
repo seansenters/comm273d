@@ -1,5 +1,5 @@
 body.woz{
-  padding-top: 40px;
+
 }
 
 footer.woz{
@@ -19,8 +19,13 @@ header.woz{
   color: white;
 }
 
-header.woz{
-//  margin-bottom: 3.0em;
-}
 
+div.woz-aside{
+  position: fixed;
+  background: #eee;
+  width: 200px;
+  top: 100px;
+  right: 220px;
+
+}
 

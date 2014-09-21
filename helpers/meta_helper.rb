@@ -1,6 +1,6 @@
 def page_title
   if (t = data.page.title)
-    t + " | " + config[:site_title]
+    t.to_s + " | " + config[:site_title]
   else
     config[:site_title]
   end

@@ -1,8 +1,12 @@
 = partial "layouts/partials/site/header_meta"
-body.woz
+body.woz.scrollspy
   = partial "layouts/partials/site/header"
-  = yield
 
+  div#woz-content
+    = yield
+
+  div.woz-aside
+    = partial "layouts/partials/site/article_nav"
 
 
 = partial "layouts/partials/site/footer"
