@@ -14,8 +14,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam accusantium, an
 
 ## Step by step
 
-1. Open a spreadsheet
-   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deserunt ducimus iste natus fuga necessitatibus. Blanditiis, voluptatibus sequi laudantium asperiores in corporis natus quisquam, illo voluptas eveniet minima qui labore.
 
 2. Select pivot tables
 
