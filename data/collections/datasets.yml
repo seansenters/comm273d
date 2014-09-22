@@ -1,0 +1,114 @@
+spreadsheet:
+  url: "//example.com"
+  categories: false
+items:
+  - name: San Francisco 311 Calls
+    source_url: https://data.sfgov.org/City-Management-and-Ethics/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6
+
+  - name: Yelp Academic Dataset
+    source_url: https://www.yelp.com/academic_dataset
+
+  - name: U.S. Congress social media activity
+
+  - name: IMDB actor and movie data
+
+  - name: FBI Uniform Crime Reports
+
+  - name: Las Vegas restaurant inspection data
+
+  - name: U.S. Baby Names
+
+  - name: Department of Defense Excess Property Program
+
+  - name: NYPD Stop and Frisk Data
+
+  - name: New York Times Bestsellers List
+
+  - name: New York taxi rides
+    source: NYC Taxi and Limousine Commission
+    links:
+      - name: FOILing NYC’s Taxi Trip Data
+        url: http://chriswhong.com/open-data/foil_nyc_taxi/
+
+  - name: Census Quickfacts
+
+  - name: Car complaints defects, investigations, and recalls
+    source: NHTSA, Office of Defects Investigation
+    notes: Data can more or less be imported straight into a database. Significant cleaning of taxonomy and errant data fields is necessary, though.
+
+  - name: Car safety ratings
+    source: NHTSA
+    source_url: http://www.safercar.gov/
+    notes: There's no downloadable database file. You're gonna have to scrape this one.
+
+  - name: California payroll data
+
+  - name: New York payroll data
+
+  - name: U.S. airline late arrivals data
+
+  - name: U.S. airline ticket costs
+
+  - name: U.S. airline accidents
+
+  - name: Boston transportation data
+
+  - name: NYC 311 calls
+
+  - name: NYC restaurants inspections data
+
+
+  - name: White House Visitors Log
+
+  - name: Chicago crime incidents
+  - name: San Francisco crime incidents
+  - name: NYC subway turnstile data
+
+  - name: OSHA Workplace Injury data
+
+  - name: NFL plays
+
+  - name: Food and drug recalls
+
+  - name: Drug adverse effects reports
+
+  - name: Federal employment opportunities
+
+  - name: California lobbying
+
+  - name: California campaign finance
+
+  - name: U.S. federal campaign finance
+
+  - name: U.S. federal lobbying
+
+
+  - name: U.S. costal tide data
+
+  - name: Medicare spending
+
+  - name: Harvard EdX student retention
+
+  - name: Marvel Comics characters and stories
+
+  - name: Jeopardy performances
+
+  - name: Amazon product reviews
+    source_url: http://snap.stanford.edu/data/web-Amazon.html
+
+  - name: Amazon movie reviews
+    source_url: http://snap.stanford.edu/data/web-Movies.html
+
+  - name: San Francisco food trucks
+    source_url: https://data.sfgov.org/Economy-and-Community/Mobile-Food-Facility-Permit/rqzj-sfat
+
+  - name: No Child Left Behind performance data
+
+  - name: Enron emails data
+    source_url: https://www.cs.cmu.edu/~./enron/
+
+  - name: LastFM
+
+  - name: Clincal research trials
+
+  - name: Congressional bills and votes

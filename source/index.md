@@ -15,7 +15,30 @@ __Quick links:__ The syllabus for [COMM 273D Fall 2014](/lectures/comm_273d/2014
 
 ## To argue with and against data
 
-COMM 273D focuses on concepts and problem solving in the domain of civic accountability. Data journalism has a broad scope, this class is focused on news judgment, story-telling, and mathematical logic.
+COMM 273D focuses on concepts and problem solving in the domain of civic accountability.
+
+- News judgment:
+
+- Research:
+
+- Mathematical logic:
+
+- Data structural concepts: 
+
+- Story-telling: 
+
+
+### Lesser-focused
+
+- Tools: None of
+
+- Statistics: to use the old adage, "If it hurts, don't do it." If you're not confident your poll of 10 people on the street merits a story, then don't do that story.
+
+- The Internet: social-media, the Web, and so forth are mediums that we may use to publish, but we won't be studying them in detail.
+
+- Visualization:
+
+- Programming:
 
 
 

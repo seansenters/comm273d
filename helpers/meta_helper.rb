@@ -1,5 +1,5 @@
 def page_title
-  if (t = data.page.title)
+  if (t = current_page.data.title)
     t.to_s + " | " + config[:site_title]
   else
     config[:site_title]
@@ -7,5 +7,5 @@ def page_title
 end
 
 def page_description
-  data.page.description || config[:site_description]
+  current_page.data.description || config[:site_description]
 end

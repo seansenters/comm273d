@@ -55,14 +55,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam accusantium, an
 
 
 
-6. Return to source data, add a row
+6. Return to source data, add a column
 
 
 
 
 
 
-7. Derive a new row
+7. Derive a new column
 
 
 

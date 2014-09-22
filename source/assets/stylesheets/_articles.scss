@@ -44,7 +44,18 @@ article{
     @extend .table-condensed;
     @extend .table-striped;
   }
+}
 
 
+article.readings{
+  .reading{
+    >.name{
+      font-size: 1.3em;
+    }
+  }
 
+  blockquote.excerpt{
+    font-size: 1.0em;
+    font-style: italic;
+  }
 }
