@@ -2,6 +2,24 @@ body.woz{
 
 }
 
+
+h1,h2{
+  font-family: $font-family-display;
+  font-weight: 400;
+}
+
+h5{
+  font-weight: bold;
+}
+
+.home-title{
+
+  font-size: 3.5em;
+  color: #fff;
+  text-shadow: 1px 1px 2px #555;
+
+}
+
 footer.woz{
   border-top: thin solid #b3aaa9;
   margin-top: 100px;
@@ -15,8 +33,22 @@ footer.woz{
 }
 
 header.woz{
-  background: #24242a;
-  color: white;
+  .title{
+    font-size: 1.1em;
+    color: white;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+  .navbar{
+    min-height: 1.5em;
+  }
+  .navbar-inverse{
+    background: $stanford-red;
+
+    a:link, a:visited{
+      color: white;
+    }
+  }
 }
 
 
@@ -39,4 +71,10 @@ div.woz-aside{
 
 ol, ul{
   padding-left: 1.0em;
+}
+
+
+.sec{
+  margin-top: 1.0em;
+  padding-top: 1.0em;
 }

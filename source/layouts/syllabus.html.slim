@@ -2,9 +2,12 @@
 - lecture_meta = cdata.other_meta || {}
 = wrap_layout :layout
   article.syllabus
-    div.container => yield
+
+    div.container
+      h1 => current_page.data.title
+      section.content => yield
 
     div.container
       section.course-schedule
-        h5 Course schedule
+        h3 Course schedule
         div => partial 'layouts/partials/course_schedule', locals: {lectures: blog('lectures').articles, course: cdata.course, term: cdata.term}

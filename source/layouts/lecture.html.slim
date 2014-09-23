@@ -8,18 +8,19 @@
     div.container
       section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_data, page_data: cdata, course: course, term: term}
 
-    section.content
+    section.sec.content
       div.container
         = yield
 
 
 
       // homework: TODO, make another partial
-      section#homework-details
+      section#homework-details.sec
         div.container
           h2 Homework
           - lecture_data[:homework].andand.each do |homework|
-              div.assignment
+            ul
+              li.assignment
                 div.meta
                   h4.title => homework[:title]
                   div.duedate => 'Due ' + (homework[:duedate] ? friendly_schedule_date(homework[:duedate]) : 'by next class')

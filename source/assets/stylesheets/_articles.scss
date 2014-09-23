@@ -35,14 +35,16 @@ article.lecture{
   #homework-details{
     .assignment{
       margin-bottom: 2.0em;
+      ul, ol{
+        margin-bottom: 1.0em;
+      }
 
       .meta{
         h4.title{
           font-weight: bold;
           margin-bottom: 0.1em;
         }
-        border-bottom: thin solid #ccc;
-        margin-bottom: 0.3em;
+        margin-bottom: 0.5em;
       }
     }
   }
@@ -85,6 +87,14 @@ article.readings{
 }
 
 
+.course-schedule{
+  .lecture{
+    margin-bottom: 1.5em;
+
+    .date{ font-weight: bold}
+    .title{margin-top: 0.1em; margin-bottom: 0.2em;}
+  }
+}
 
 .homework .duedate{
   font-style: italic;

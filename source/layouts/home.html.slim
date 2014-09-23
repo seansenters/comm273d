@@ -2,15 +2,18 @@
 = wrap_layout :layout
   article.home
     section.meta
-      div.container
-        h1 class="title" = cdata.title
+      img src="/assets/images/273d-header.jpg" alt="Walking the unfinished third section of the High Line Park, New York" style="max-width: 100%; margin-bottom: -3.0em;"
+      div style="background: #8c1515; margin-bottom: 2.0em;"
+        div.container
+          h1 class="home-title" = cdata.title
+
     section.content
       div.container
         = yield
 
 
       - if current_course = cdata.current_course
-        section.current_course
+        section.current_course.course-schedule
           div.container
             h2#current-course-schedule Course schedule
             div => partial 'layouts/partials/course_schedule', locals: { lectures: blog('lectures').articles, course: current_course[:name], term: current_course[:term]}

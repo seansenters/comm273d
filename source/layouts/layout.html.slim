@@ -1,6 +1,7 @@
 = partial "layouts/partials/site/header_meta"
 body.woz.scrollspy
-  = partial "layouts/partials/site/header"
+  - unless current_page.data[:layout] == 'home'
+    = partial "layouts/partials/site/header"
 
   div#woz-content
     = yield
