@@ -1,0 +1,143 @@
+"2014-09-23":
+  topics:
+  - Count something interesting
+  - Make friends with math
+  - The joy of text
+  - How to do a data project
+  homework:
+    - title: Create a Github account and publish a document in Markdown
+      description: |
+        - Sign up for a [Github account](https://github.com/join).
+        - Email me the name of your Github account.
+        - Create a **New Repository** and name it however you'd like ([some tips here](https://guides.github.com/activities/hello-world/#repository)).
+        - Create a new README.md file. Write anything you like, but do it in [Markdown](https://help.github.com/articles/markdown-basics)
+        - Note: This repo will be **public**. As soon as you email me the name of your Github account, I'll set you up with a private repo, to which you can post homework assignments. Don't post homework assignments to your **public** repo (unless you want to, in which case, bravo).
+
+    - title: Critique a piece of data journalism
+      description: |
+        Find a story that purports to use data, read it, and answer the following questions:
+
+        - What are the datasets used here, and where did they come from?
+        - What is the "birth story" of the data, e.g. how were they created in the first place?
+        - What claims does the story make based on the data?
+        - What are the limitations of the data?
+        - Can you find where this (original) data exists online? If so, post the relevant URLs.
+        Write this memo in Markdown format and post it to your __private__ Github repo. If this hasn't been set up for you, then just email it to me.
+
+        Here are examples of data-based stories that you can use for this assignment if you don't want to look for your own:
+
+        - [Drugging Our Kids](http://webspecial.mercurynews.com/druggedkids/?page=pt1) - San Jose Mercury News
+        - [Unseen Toll: Wages of Millions Seized to Pay Past Debts](http://www.propublica.org/article/unseen-toll-wages-of-millions-seized-to-pay-past-debts) - ProPublica
+        - [When Caregivers Harm:](http://www.propublica.org/article/when-caregivers-harm-california-problem-nurses-stay-on-job-710) - ProPublica
+        - [Water's edge: the crisis of rising sea levels](http://www.reuters.com/investigates/special-report/waters-edge-the-crisis-of-rising-sea-levels/#article-1-insidious-invasion) - Reuters
+        - [Children and Guns: The Hidden Toll](http://www.nytimes.com/2013/09/29/us/children-and-guns-the-hidden-toll.html)(New York Times)
+        - [Sliver of Medicare Doctors Get Big Share of Payouts](http://www.nytimes.com/2014/04/09/business/sliver-of-medicare-doctors-get-big-share-of-payouts.html) - New York Times
+        - [The Undeserving Poor](http://www.reuters.com/subjects/income-inequality/indiana) - Reuters
+        - [Stop and Seize](http://www.washingtonpost.com/sf/investigative/2014/09/06/stop-and-seize/) - Washington Post
+        - [LAPD misclassified nearly 1,200 violent crimes as minor offenses](http://www.latimes.com/local/la-me-crimestats-lapd-20140810-story.html)
+        - [Child-care scams rake in thousands](http://www.jsonline.com/watchdog/watchdogreports/38283494.html) - Milwaukee Journal Sentinel
+        - [‘Stop-and-Frisk’ Is All but Gone From New York](http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-is-all-but-gone-from-new-york.html) - New York Times
+
+    - title: List your 10 favorite restaurants in a CSV file
+      description: |
+        Create a [comma-seperated value (CSV) file](http://en.wikipedia.org/wiki/Comma-separated_values) with your 10 favorite restaurants. Include these fields: name,address,city,state,category,yelp_url
+
+        Send it to me by email or post it to your private Github repo.
+
+    - title: List 10 news-related Twitter accounts that you find interesting
+      description: |
+        Make a list of the Twitter account names (or their URLs), one account per line. Send it to me via email or post it on Github as a text file.
+
+  supplements:
+    - title: What the Fox Knows
+      category: essay
+      source: "Nate Silver; FiveThirtyEight"
+      url: "http://fivethirtyeight.com/features/what-the-fox-knows/"
+    - title: The NFL’s Uneven History Of Punishing Domestic Violence
+      source: "Allison McCann; FiveThirtyEight"
+      category: story
+      url: "http://fivethirtyeight.com/features/nfl-domestic-violence-policy-suspensions/"
+    - title: Markdown Basics
+      category: tutorial
+      source: Github Help
+      url: "https://help.github.com/articles/markdown-basics"
+    - title: "Above the Law: Speeding Cops"
+      category: story
+      source: "Sally Kestin and John Maines; Sun Sentinel"
+      url: "http://www.pulitzer.org/works/2013-Public-Service"
+    - title: "How the Sun Sentinel reported its Pulitzer Prize winning coverage of off-duty cops"
+      url: "http://www.ire.org/blog/ire-news/2013/04/15/how-sun-sentinel-reported-its-pulitzer-prize-winni/"
+      category: article
+      description: "A blueprint of how to use research, ingenuity, and math, to turn a sensational story into one with long-lasting impact."
+
+
+
+"2014-09-25":
+# "Bad Data" / making comparisons
+  topics:
+    - The importance of spreadsheets
+    - Data granularity
+    - FBI crime reporting
+    - Baltimore rapes
+    - San Francisco crime incident reports
+    - Pivot tables
+
+  homework:
+    - Pivot table on SFPD incident reports, post a screenshot
+    - Look up a SF dataset, critique it.
+    - read fatalencounteres essay, write up all the problems encountered with data.
+    - title: "Read The New Precision Journalism, Chapter 8: Databases"
+      text: |
+        Read from the 1991 edition online: [http://www.unc.edu/~pmeyer/book/Chapter8.htm](http://www.unc.edu/~pmeyer/book/Chapter8.htm)
+
+
+"2014-09-30":
+# DIY Databases
+  topics:
+    - Count something interesting
+    - Counting murders
+    - Making calls
+    - A crowdsourced spreadsheet
+    - Building interactives from spreadsheets
+
+  homework:
+    - Find something interesting to count
+    - Read Phillip Reese's stories
+    - Write a data memo
+    - Make a Timeliner spreadsheet
+
+"2014-10-02":
+  topics:
+    - Phillip Reese speaks
+
+
+"2014-10-07":
+  topics:
+    - More on data granularity
+    - Make a public records request
+    - More pivot tables
+    - The price of a cab
+  homework:
+    - Write up a public records request
+
+"2014-10-09":
+  topics:
+    - The forms of death
+
+
+"2014-10-14":
+"2014-10-16":
+"2014-10-21":
+"2014-10-23":
+"2014-10-28":
+"2014-10-30":
+"2014-11-04":
+"2014-11-06":
+"2014-11-11":
+"2014-11-13":
+"2014-11-18":
+"2014-11-20":
+"2014-11-25":
+"2014-11-27":
+"2014-12-02":
+"2014-12-04":

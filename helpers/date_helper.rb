@@ -1,4 +1,8 @@
 
+def date_slug(val)
+  _to_date(val).strftime '%Y-%m-%d'
+end
+
 def friendly_date(val)
   _to_date(val).strftime '%B %d, %Y'
 end

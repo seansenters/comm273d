@@ -26,6 +26,17 @@ div.woz-aside{
   width: 200px;
   top: 100px;
   right: 220px;
-
 }
 
+.list-inline-bullets{
+  @extend .list-inline;
+  li:before {
+    content:'\ffed';
+    margin-right:0.5em;
+  }
+}
+
+
+ol, ul{
+  padding-left: 1.0em;
+}

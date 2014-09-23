@@ -9,3 +9,8 @@ end
 def page_description
   current_page.data.description || config[:site_description]
 end
+
+
+def make_markdown(str)
+  Kramdown::Document.new(str.to_s).to_html
+end

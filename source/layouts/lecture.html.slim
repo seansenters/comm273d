@@ -1,16 +1,29 @@
 - cdata = current_page.data
-- lecture_meta = cdata.other_meta || {}
 - course = current_article.metadata[:page]['course']
+- lecture_data = get_lecture_data data.lectures, course, cdata.date
+
 - term = current_article.metadata[:page]['term']
 = wrap_layout :layout
   article.lecture
     div.container
-      section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_meta, page_data: cdata, course: course, term: term}
+      section.top-matter => partial 'layouts/partials/lecture_top_matter', locals: {lecture_data: lecture_data, page_data: cdata, course: course, term: term}
 
     section.content
       div.container
         = yield
 
+
+
+      // homework: TODO, make another partial
+      section#homework-details
+        div.container
+          h2 Homework
+          - lecture_data[:homework].andand.each do |homework|
+              div.assignment
+                div.meta
+                  h4.title => homework[:title]
+                  div.duedate => 'Due ' + (homework[:duedate] ? friendly_schedule_date(homework[:duedate]) : 'by next class')
+                div.description => make_markdown homework[:description]
 
     section.foot-matter
       div.container

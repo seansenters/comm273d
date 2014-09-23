@@ -3,55 +3,125 @@ spreadsheet:
   categories: false
 items:
   - name: San Francisco 311 Calls
+    source: City of San Francisco
     source_url: https://data.sfgov.org/City-Management-and-Ethics/Case-Data-from-San-Francisco-311-SF311-/vw6y-z8j6
+    description: |
+      311 calls to San Francisco from July 1, 2008 to present. Contains location information, resposible agency, opened and closed dates.
 
-  - name: Yelp Academic Dataset
-    source_url: https://www.yelp.com/academic_dataset
+  - name: Yelp Dataset Challenge
+    source_url: http://www.yelp.com/dataset_challenge
+    source: Yelp
+    description:
+      Reviews, users, and businesses, check-ins, and tips for the cities of Phoenix, Las Vegas, Madison, Waterloo, and Edinburgh.
 
   - name: U.S. Congress social media activity
+    source: Crowdsourced
+    source_url: https://github.com/unitedstates/congress-legislators
+    description: Social media accounts of sitting U.S. legislators. Only contains account IDs, not actual data.
 
   - name: IMDB actor and movie data
+    source_url: http://www.imdb.com/interfaces
+    source: IMDB
+    description: Massive plain text data dumps for various fields of info collected by IMDB, including actor biographies, movie box-office performance, and cast lists.
 
   - name: FBI Uniform Crime Reports
+    source_url: http://www.fbi.gov/about-us/cjis/ucr/
+    source: Department of Justice
+    description: |
+      A collection of various categories of crime statistics from data received by partciptating law agencies. The FBI's data tool is a little unwiedly; raw data sets can be obtained through the [National Archive of Criminal Justice Data](http://www.icpsr.umich.edu/icpsrweb/content/NACJD/guides/ucr.html)
 
   - name: Las Vegas restaurant inspection data
+    source: South Nevada Health District
+    source_url: http://www.southernnevadahealthdistrict.org/restaurants/index.php
+    description: Results of health inspections and violations found
 
   - name: U.S. Baby Names
+    source: Social Security Administration
+    source_url: http://www.ssa.gov/oact/babynames/limits.html
+    description: Number of names given to U.S. babies per year, by state
 
   - name: Department of Defense Excess Property Program
+    source: Department of Defense, collected by National Public Radio
+    source_url: https://github.com/nprapps/leso
+    description: Line-item listing of military equipment distributed to civilian law enforcement agencies since 2006.
 
   - name: NYPD Stop and Frisk Data
+    source: New York Police Department
+    source_url: http://www.nyc.gov/html/nypd/html/analysis_and_planning/stop_question_and_frisk_report.shtml
+    description: Stops made by the NYPD from 2003 to present. Fields include geographical coordinates, race of the stopped person, and cause for and result of the stop.
 
   - name: New York Times Bestsellers List
+    source: New York Times
+    source_url: http://developer.nytimes.com/docs/best_sellers_api/
+    description: Rank history for specific titles
 
   - name: New York taxi rides
     source: NYC Taxi and Limousine Commission
-    links:
-      - name: FOILing NYC’s Taxi Trip Data
-        url: http://chriswhong.com/open-data/foil_nyc_taxi/
+    source_url: http://www.nyc.gov/html/tlc/html/about/statistics.shtml
+    description: |
+      Fields include time and location of pickup and dropoffs, as well as trip cost and distance. Raw data must be requested via FOIL. Read Chris Whong's [FOILing NYC’s Taxi Trip Data](http://chriswhong.com/open-data/foil_nyc_taxi/)
 
   - name: Census Quickfacts
+    source: U.S. Census
+    source_url: http://quickfacts.census.gov/qfd/download_data.html
+    description: Summary population data and demographics per state and county.
 
   - name: Car complaints defects, investigations, and recalls
     source: NHTSA, Office of Defects Investigation
+    source_url: http://www-odi.nhtsa.dot.gov/downloads/
+    description: Contains records and narratives of accidents in which a car defect is suspected as a cause. Includes any subsequent investigations and recalls.
     notes: Data can more or less be imported straight into a database. Significant cleaning of taxonomy and errant data fields is necessary, though.
 
   - name: Car safety ratings
     source: NHTSA
     source_url: http://www.safercar.gov/
-    notes: There's no downloadable database file. You're gonna have to scrape this one.
+    description: Safety ratings, features, and characteristics of cars sold in the U.S.
+    notes: |
+      There's no downloadable database file. You're going to have to scrape this one.
 
   - name: California payroll data
+    source: California State Controller's Office
+    source_url: http://publicpay.ca.gov/
+    description: |
+       Salary and compensation information for public entities in California, including 58 counties, more than 450 cities, more than 2,900 special districts, more than 100 higher education providers, and most state employees
 
   - name: New York payroll data
+    source: New York City Comptroller
+    source_url: http://www.checkbooknyc.com/payroll/yeartype/B/year/116
+    description: Payroll information for city employees
 
-  - name: U.S. airline late arrivals data
+  - name: U.S. airline on-time statistics
+    source: Bureau of Transportation Statistics
+    source_url: http://apps.bts.gov/xml/ontimesummarystatistics/src/index.xml
+    description: |
+      Percentage of late flights, by airline, origin, and destination
 
   - name: U.S. airline ticket costs
+    source: Bureau of Transportation Statistics
+    source_url: "http://www.transtats.bts.gov/Tables.asp?DB_ID=125&DB_Name=Airline%20Origin%20and%20Destination%20Survey%20%28DB1B%29&DB_Short_Name=Origin%20and%20Destination%20Survey"
+    description: Sample of 10% of airline itineraries
 
-  - name: U.S. airline accidents
+  - name: U.S. accident and incident data
+    source: Federal Aviation Administration
+    source_url: http://www.faa.gov/data_research/accident_incident/
+    description: Preliminary report and investigation data from air carrier safety incidents.
 
-  - name: Boston transportation data
+  - name: Wildlife Strike Database
+    source: Federal Aviation Administration
+    source_url: http://wildlife.faa.gov/
+    description: Voluntary reports of aircraft collisions with wildlife.
+
+
+  - name: Massachusetts transportation data
+    description: Anonymous vehicle-use data in Massachusetts released as part of a hackathon
+    source_url: http://www.37billionmilechallenge.org/
+    source: Massachusetts Department of Transportation
+
+  - name: Crunchbase
+    source: TechCrunch via crowdsourcing
+
+
+
 
   - name: NYC 311 calls
 
@@ -62,6 +132,11 @@ items:
 
   - name: Chicago crime incidents
   - name: San Francisco crime incidents
+    source: San Francisco Police Department
+    source_url: https://data.sfgov.org/Public-Safety/SFPD-Reported-Incidents-2003-to-Present/dyj4-n68b
+    description: |
+      Incidents reported via the SFPD CABLE System, from 1/1/2003 to present. In KML format (past 90 days) In Shapefile format (by year) In CSV format (all: 800,000 plus records).
+
   - name: NYC subway turnstile data
 
   - name: OSHA Workplace Injury data
@@ -88,8 +163,6 @@ items:
   - name: Medicare spending
 
   - name: Harvard EdX student retention
-
-  - name: Marvel Comics characters and stories
 
   - name: Jeopardy performances
 

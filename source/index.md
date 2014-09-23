@@ -13,49 +13,57 @@ __Quick links:__ The syllabus for [COMM 273D Fall 2014](/lectures/comm_273d/2014
 
 --------------
 
-## To argue with and against data
+## Core concepts
 
-COMM 273D focuses on concepts and problem solving in the domain of civic accountability.
+To argue with and against data.
 
-- News judgment:
+Our focus is not on tools, but concepts and problem solving. Not on complex statistics, but mathematical logic. Not on visualization design but on story-telling.
 
-- Research:
-
-- Mathematical logic:
-
-- Data structural concepts: 
-
-- Story-telling: 
-
-
-### Lesser-focused
-
-- Tools: None of
-
-- Statistics: to use the old adage, "If it hurts, don't do it." If you're not confident your poll of 10 people on the street merits a story, then don't do that story.
-
-- The Internet: social-media, the Web, and so forth are mediums that we may use to publish, but we won't be studying them in detail.
-
-- Visualization:
-
-- Programming:
-
-
-
-### Project work
-
+And above all, a focus on the natural footwork and research needed to both understand data, where it comes from, what stories are behind it, and also when necessary, to dismiss it.
 
 
 ### A conceptual final
 
-Sample problems I would like students to solve:
+Reporting is difficult to teach. The intiution of a story, the doggedness of questioning, is hard to instill no matter what the course. If I had to give a final of 
 
-- Given a line-by-item listing of military surplus data 
-- Given the database created above, 
-- Given the database above, list missing flaws in the data
 
-- Given a list of 100 Twitter accounts and 100 of their recent tweets, devise a system to relaibly filter spam accounts using only a spreadsheet.
-- With only a 
+## Techniques and tools
+
+It's one thing to understand and appreciate the potential data, it's another to directly work with it to test your ideas and satisfy your curiousity. So just as a photography course would expect you to shoot your own photos, this course will teach you how to manage and explore data yourself.
+
+I've tried to keep the tools and programs as agnostic as possible:
+
+- A plain text editor
+- A spreadsheet
+- A database
+- OpenRefine - this is the most specific, narrow-use tool on this list. But it's the best at what it does &ndash; data cleaning &ndash; a field of pursuit that can easily make or break a project.
+
+
+### A technical final
+
+- Given the line-by-line item list of military surplus items, and the military file for weapon categories, the Census list of FIPS codes, Census demographic data per county:
+  -  Clean the data sets so that they can be imported and joined in a relational database
+  -  Find the county with the most Humvees per capita
+  -  Find all counties that haven't received any military surplus since 2006.
+
+- Given a generic spreadsheet containing a list of data from Twitter profile accounts, such as username, number of followers, number of tweets, most recent tweet, etc..
+-  Devise an effective system for flagging spam-like accounts (yes, by just using spreadsheet functions).
+- Given a database of those Twitter profile data, and 100 of each account's most recent tweets, write a query that would further refine the accuracy of that spam test.
+
+
+Note: There won't actually be a final (unless students want one), but this is the level of understanding I hope they reach, so that they can confidently work through data.
+
+
+### Project work
+
+This class will have regular assignments, such as writing "data memos" and practicing data exploration techniques. The majority of the grade will be based on a data journalism project. 
+
+A fine example can be found at FiveThirtyEight, where Allison McCann manually researched and compiled a database of NFL suspensions, to give context to the NFL's decision-making regarding Ray Rice. Even though McCann didn't have direct access to league officials, and lacked the sourcing of TMZ, her research still brought important context to a hot topic. The incident data itself wasn't complete, but she did the research to know why that was so, and the implications of that.
+
+This would be an easy A for this class. In the end, I don't care what tools you used, how many SQL joins you used, how long you spent cleaning text with regular expressions, or how many charts are used, if any at all: if you can find an untold story, carry it out with context, bring the initiative and curiousity and attention to fact and tell me something I didn't know before, and show why it means something, then you've satisfied the core of journalism.
+
+(But in all these things, a spreadsheet will help. Seriously. Don't *not* use a spreadsheet)
+
 
 
 ### Related classes

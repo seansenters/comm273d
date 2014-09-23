@@ -4,6 +4,7 @@
   article.syllabus
     div.container => yield
 
-    section.course-schedule
-      h5 Course schedule
-      div => partial 'layouts/partials/course_schedule', locals: {lectures: blog('lectures').articles, course: cdata.course, term: cdata.term}
+    div.container
+      section.course-schedule
+        h5 Course schedule
+        div => partial 'layouts/partials/course_schedule', locals: {lectures: blog('lectures').articles, course: cdata.course, term: cdata.term}

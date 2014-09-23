@@ -1,29 +1,34 @@
 section.top-meta
-  h5 => "Class: #{course_name course} | #{term_name term}"
+  h4 => "#{course_name course} | #{term_name term}"
   h5 class="date" data-date="#{{machine_date page_data.date}}" = friendly_schedule_date page_data.date
   h1 class="title" = page_data.title
   div.deck
     p = page_data.deck
   div.description
     p = page_data.description
-section.other-meta
-  div.highlights
-    h4 Highlights
-    ul
-      - lecture_data[:highlights].andand.each do |hilite|
-        li => hilite
+section.overview
+  div.topics
+    h4 Topics
+    ul.list.list-inline-bullets
+      - lecture_data[:topics].andand.each do |topic|
+        li => topic
 
   div.homework
     h4 Homework
-    - lecture_data[:homework].andand.each do |homework|
-      ul
-        li => homework[:title]
+    ul.list
+      - lecture_data[:homework].andand.each do |homework|
+          li
+            span.title => homework[:title]
+            span.duedate => 'Due ' + (homework[:duedate] ? friendly_schedule_date(homework[:duedate]) : 'by next class')
+    p
+      ' Jump to the
+      a href='#homework-details' full details on homework assignments
 
-  div.supplements
-    h4 Supplements
-    - lecture_data[:supplements].andand.each do |supplement|
-      ul
-        li
-          a.title href="#{{supplement[:url]}}"
-            span => supplement[:title]
-          span.source => supplement[:source]
+  / div.supplements
+  /   h4 Supplements
+  /   - lecture_data[:supplements].andand.each do |supplement|
+  /     ul
+  /       li
+  /         a.title href="#{{supplement[:url]}}"
+  /           span => supplement[:title]
+  /         span.source => supplement[:source]

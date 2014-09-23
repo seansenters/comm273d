@@ -3,6 +3,10 @@ def course_name(cslug)
   cslug.upcase.sub('_', ' ')
 end
 
+def get_lecture_data(data_lectures, course_slug, lecture_date)
+  data_lectures[course_slug].andand[date_slug(lecture_date)]
+end
+
 def term_name(cslug)
 #  cslug = article.metadata[:page]['term']
   cslug.split('_').reverse.join(' ').titleize

@@ -24,9 +24,22 @@ __Who:__ Dan Nguyen
 Even before the ubiquity of Internet access and high-powered computers, public accountability reporting relied on the concerted collection of observations and analytical problem-solving. We study the methods, and the data, used to discover leads and conduct in-depth reporting on public affairs, including election finance and safety regulations. Students gain practical experience with the digital tools and techniques of computer-assisted reporting. __Prerequisite:__ Journalism M.A. student.*
 
 
+### Tools and technology
+
+The work and exercises in this class should be doable with any Windows, Mac, or Linux computer capable of running a modern web browser.
+
+- Text editor: I recommend Sublime Text. In the lab, we'll be using TextWrangler.
+- Spreadsheet: In-class demonstrations will involve Google Spreadsheets. Microsoft Excel will also do fine.
+- Database: In-class demonstrations will use Sequel Pro, which is available only for Mac. On your own laptop, I recommend (for ease of installation) installing the Firefox web browser and using the SQLite Manager.
+
+ 
+
+
+
 ### Grading
 
-Lorem TK ipsum dolor sit amet, consectetur adipisicing elit. Quod necessitatibus rerum eveniet, praesentium corporis vero deserunt cumque nesciunt veritatis enim. Molestiae facilis obcaecati, quos reprehenderit voluptatum laborum itaque libero culpa.
+The course grade is based off of homework (40%), attendance (10%), and a final project (50%). For the final project, students will be expected to 
+
 
 
 ## Academic Honesty
