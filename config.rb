@@ -1,3 +1,5 @@
+require 'pry'
+
 set :markdown_engine, :kramdown
 set :trailing_slash, true
 set :site_title, 'Public Affairs Data Journalism'

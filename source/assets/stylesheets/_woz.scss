@@ -2,6 +2,10 @@ body.woz{
 
 }
 
+blockquote{
+  font-size: 1.0em;
+}
+
 
 h1,h2{
   font-family: $font-family-display;
@@ -77,4 +81,11 @@ ol, ul{
 .sec{
   margin-top: 1.0em;
   padding-top: 1.0em;
+
+  &.major{
+    margin-top: 5.0em;
+  }
+
 }
+
+

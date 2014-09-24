@@ -83,9 +83,9 @@
     - Pivot tables
 
   homework:
-    - Pivot table on SFPD incident reports, post a screenshot
-    - Look up a SF dataset, critique it.
-    - read fatalencounteres essay, write up all the problems encountered with data.
+    - title: Pivot table on SFPD incident reports, post a screenshot
+    - title: Look up a SF dataset and critique it
+    - title: Read the fatalencounters.com essay and write up the data problems encountered
     - title: "Read The New Precision Journalism, Chapter 8: Databases"
       text: |
         Read from the 1991 edition online: [http://www.unc.edu/~pmeyer/book/Chapter8.htm](http://www.unc.edu/~pmeyer/book/Chapter8.htm)
@@ -101,10 +101,10 @@
     - Building interactives from spreadsheets
 
   homework:
-    - Find something interesting to count
-    - Read Phillip Reese's stories
-    - Write a data memo
-    - Make a Timeliner spreadsheet
+    - title: Find something interesting to count
+    - title: Read Phillip Reese's stories
+    - title: Write a data memo on Phillip Reese's stories
+    - title: Make a Timeliner spreadsheet
 
 "2014-10-02":
   topics:
@@ -118,11 +118,9 @@
     - More pivot tables
     - The price of a cab
   homework:
-    - Write up a public records request
+    - title: Write up a public records request
 
 "2014-10-09":
-  topics:
-    - The forms of death
 
 
 "2014-10-14":

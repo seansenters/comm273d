@@ -13,20 +13,19 @@
         = yield
 
 
+        // homework: TODO, make another partial
+        section#homework-details.sec.major
+          div.container
+            h2 Homework
+            - lecture_data[:homework].andand.each do |homework|
+              ul
+                li.assignment
+                  div.meta
+                    h4.title => homework[:title]
+                    div.duedate => 'Due ' + (homework[:duedate] ? friendly_schedule_date(homework[:duedate]) : 'by next class')
+                  div.description => make_markdown homework[:description]
 
-      // homework: TODO, make another partial
-      section#homework-details.sec
-        div.container
-          h2 Homework
-          - lecture_data[:homework].andand.each do |homework|
-            ul
-              li.assignment
-                div.meta
-                  h4.title => homework[:title]
-                  div.duedate => 'Due ' + (homework[:duedate] ? friendly_schedule_date(homework[:duedate]) : 'by next class')
-                div.description => make_markdown homework[:description]
-
-    section.foot-matter
+    section.foot-matter.sec
       div.container
         div.class-listing
           h5 Course schedule

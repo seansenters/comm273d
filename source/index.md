@@ -73,20 +73,6 @@ Optional tools:
 - [ModeAnalytics](https://modeanalytics.com/) - A kind-of "Github for MySQL", allowing collaboration and sharing of datasets and queries via the web browser.
 
 
------------
-
-
-## Project work
-
-This class will have regular assignments, such as writing "data memos" and practicing data exploration techniques. The majority of the grade will be based on a data journalism project. 
-
-A fine example can be found at FiveThirtyEight, where Allison McCann manually researched and compiled a database of NFL suspensions, to give context to the NFL's decision-making regarding Ray Rice. Even though McCann didn't have direct access to league officials, and lacked the sourcing of TMZ, her research still brought important context to a hot topic. The incident data itself wasn't complete, but she did the research to know why that was so, and the implications of that.
-
-This would be an easy A for this class. In the end, I don't care what tools you used, how many SQL joins you used, how long you spent cleaning text with regular expressions, or how many charts are used, if any at all: if you can find an untold story, carry it out with context, bring the initiative and curiousity and attention to fact and tell me something I didn't know before, and show why it means something, then you've satisfied the core of journalism.
-
-(But in all these things, a spreadsheet will help. Seriously. Don't *not* use a spreadsheet)
-
-
 
 -----------
 

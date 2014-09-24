@@ -10,3 +10,4 @@ gem "kramdown"
 gem 'bootstrap-sass', '~> 3.2'
 gem 'chronic'
 gem 'andand'
+gem 'pry'

@@ -1,6 +1,6 @@
 / the :course is actually current_article, via the blog plugin
 div.course-schedule
-  h5 => "Course: #{course_name course} Term: #{term_name term}"
+  / h5 => "Course: #{course_name course} Term: #{term_name term}"
   ul.list.list-unstyled
     - lectures.sort_by{|a| a.date }.each do |lecture|
       li.lecture
